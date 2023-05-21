@@ -5,12 +5,12 @@ function Statistics({ title = '', stats }) {
   console.log(stats);
   return (
     <section className={css.statistics}>
-      {title !== '' && <h2 class="title">Upload stats</h2>}
-      <ul class="stat-list">
+      {title !== '' && <h2 className={css.title}>Upload stats</h2>}
+      <ul className={css.statList}>
         {stats.map(item => (
-          <li class="item" key={item.id}>
-            <span class="label">{item.label}</span>
-            <span class="percentage">{item.percentage}%</span>
+          <li className={css.item} key={item.id}>
+            <span className={css.label}>{item.label}</span>
+            <span className={css.percentage}>{item.percentage}%</span>
           </li>
         ))}
       </ul>

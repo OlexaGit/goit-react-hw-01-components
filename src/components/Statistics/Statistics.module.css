@@ -1,3 +1,21 @@
 .statistics {
-  display: block;
+  width: 512px;
+  margin: 80px auto 0;
+  /* margin-right: auto; */
+}
+.statList {
+  display: flex;
+  justify-content: space-around;
+  background-color: bisque;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-weight: 100;
 }
