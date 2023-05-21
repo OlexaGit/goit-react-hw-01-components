@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import css from './Statistics.module.css';
 
 function Statistics({ title = '', stats }) {
   console.log(stats);
   return (
-    <section class="statistics">
+    <section className={css.statistics}>
       {title !== '' && <h2 class="title">Upload stats</h2>}
       <ul class="stat-list">
         {stats.map(item => (
