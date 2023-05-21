@@ -1,0 +1,15 @@
+.status {
+  background-color: red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.statusisOnline {
+  background-color: green;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.avatar {
+  height: 100%;
+}
