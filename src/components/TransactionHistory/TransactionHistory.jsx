@@ -1,20 +1,20 @@
-// import { type } from '@testing-library/user-event/dist/type';
 import PropTypes from 'prop-types';
+import css from './Transaction.module.css';
 
 function TransactionHistory({ items }) {
   return (
-    <table class="transaction-history">
+    <table className={css.transactionHistory}>
       <thead>
-        <tr>
+        <tr className={css.titleTable}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
       </thead>
 
-      <tbody>
+      <tbody className={css.listTable}>
         {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
+          <tr key={id} className={css.itemTable}>
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>
