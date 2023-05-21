@@ -19,3 +19,9 @@
   background-color: bisque;
   box-sizing: 3px;
 }
+.titleTableItem {
+  padding: 20px;
+}
+.itemTableItem {
+  padding: 10px;
+}

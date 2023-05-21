@@ -6,18 +6,18 @@ function TransactionHistory({ items }) {
     <table className={css.transactionHistory}>
       <thead>
         <tr className={css.titleTable}>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.titleTableItem}>Type</th>
+          <th className={css.titleTableItem}>Amount</th>
+          <th className={css.titleTableItem}>Currency</th>
         </tr>
       </thead>
 
       <tbody className={css.listTable}>
         {items.map(({ id, type, amount, currency }) => (
           <tr key={id} className={css.itemTable}>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+            <td className={css.itemTableItem}>{type}</td>
+            <td className={css.itemTableItem}>{amount}</td>
+            <td className={css.itemTableItem}>{currency}</td>
           </tr>
         ))}
       </tbody>
