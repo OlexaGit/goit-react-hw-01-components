@@ -3,15 +3,11 @@ import css from './FriendListItem.module.css';
 
 function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <>
-      {isOnline ? (
-        <span className={css.statusisOnline}></span>
-      ) : (
-        <span className={css.status}></span>
-      )}
+    <li className={css.item}>
+      <span className={isOnline ? css.statusIsOnline : css.status} />
       <img className={css.avatar} src={avatar} alt={name} width="48" />
       <p>{name}</p>
-    </>
+    </li>
   );
 }
 FriendListItem.propTypes = {
